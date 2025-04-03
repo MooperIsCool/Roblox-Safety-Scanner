@@ -4,8 +4,8 @@ import time
 import re
 
 # Define the range of User IDs to scan
-START_USER_ID = 610683544
-END_USER_ID = 8065019393
+START_USER_ID = 6246497384
+END_USER_ID = 8246497384
 BATCH_SIZE = 100  # Number of users per request
 
 # Updated list of flagged words
@@ -74,8 +74,8 @@ def get_user_info(user_ids):
         if response.status_code == 200:
             return response.json().get("data", [])
         elif response.status_code == 429:  # Rate limit error
-            print("⚠️ Rate limited! Waiting 30 seconds before retrying...")
-            time.sleep(30)  # Wait longer to avoid getting blocked
+            print("⚠️ Rate limited! Waiting 15 seconds before retrying...")
+            time.sleep(15)  # Wait longer to avoid getting blocked
         else:
             print(f"❌ Error fetching user info: {response.status_code}")
             return []
