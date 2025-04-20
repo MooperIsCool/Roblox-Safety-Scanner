@@ -6,7 +6,7 @@ import os
 
 # Define the range of User IDs to scan
 START_USER_ID = 6246497384
-END_USER_ID = 6246597384  # Reduced range for testing
+END_USER_ID = 8246597384  # Reduced range for testing
 BATCH_SIZE = 100  # Number of users per request
 
 # Updated list of flagged words
